@@ -1,0 +1,44 @@
+{
+  "conditions": {
+    "rules": {
+      "turns": 36,
+      "intentAcc": 36.1,
+      "intentMacroF1": 32.3,
+      "riskRecallByCategory": {
+        "churn": 0,
+        "safety": 60,
+        "legal": 100,
+        "minor": 0
+      },
+      "severeMissed": "3/7",
+      "falseAlarmOnCleanTurns": 7.1,
+      "acknowledgedBrokenPromise": 100,
+      "remedyActionProposed": 100,
+      "falseApology": 0,
+      "reaskedKnownInfo": 1,
+      "wrongOrderCited": 0,
+      "unsupportedCommitments": 0,
+      "factErrors": 0,
+      "policyClaimSupport": 72.7,
+      "modelCalls": 0,
+      "modelFailures": 0,
+      "tokensPerTurn": 0,
+      "costPerTurnYuan": 0,
+      "latencyMs": {
+        "p50": 1,
+        "p95": 2
+      }
+    }
+  },
+  "generatedAt": "2026-10-14T06:44:53.944Z",
+  "setHash": "12900478d560b8dadd23669a738f9acc331797f50899b44f58c75e1df102ecb7",
+  "frozenAt": "2026-10-14T06:29:22.538Z",
+  "sessions": 14,
+  "turns": 36,
+  "model": null,
+  "notes": [
+    "第一次运行（规则条件）冻结在 eval/e2e-first.json。",
+    "之后做过一轮修改：评分脚本把“提到照片”误算成“再次索要照片”、把引用逾期承诺所在订单误算成订单混淆，已修正；产品侧让失约回复只在本轮说的就是那笔订单时接管，其他订单的问题正常回答并加一句承认失约。修改后的规则条件成绩已不是盲测成绩。",
+    "大模型条件（B–E）尚未在真实模型上运行，没有看过结果。"
+  ]
+}

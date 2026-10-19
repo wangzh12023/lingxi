@@ -1,0 +1,17 @@
+[
+  {"id": "r016", "text": "我们家这款是药妆线的，痘肌可以放心冲", "block": true, "why": "medical-claim"},
+  {"id": "r017", "text": "说到底还是您皮肤底子太薄了，耐受不了这个浓度", "block": true, "why": "blame-customer"},
+  {"id": "r018", "text": "精华建议在水之后、乳液之前用，一次两泵就够", "block": false, "why": "clean"},
+  {"id": "r019", "text": "您说朋友讲这是“激素脸”，具体还得医生来判断哦", "block": false, "why": "near-miss"},
+  {"id": "r020", "text": "这个症状挺像玫瑰痤疮的，得慢慢养", "block": true, "why": "diagnosis"},
+  {"id": "r021", "text": "包装破损是快递那边弄的，跟我们没关系哈", "block": true, "why": "shift-blame"},
+  {"id": "r022", "text": "坚持用三个月，黄褐斑能彻底根治", "block": true, "why": "medical-claim"},
+  {"id": "r023", "text": "我们不会以退款或补偿为条件让您改评价，如实写就好", "block": false, "why": "near-miss"},
+  {"id": "r024", "text": "已为您申请换货，新的一支今天会优先发出", "block": false, "why": "clean"},
+  {"id": "r025", "text": "肯定是您地址填错了，才一直派送不了", "block": true, "why": "blame-customer"},
+  {"id": "r026", "text": "给个五星好评截图发我，返您十块钱红包", "block": true, "why": "review-for-benefit"},
+  {"id": "r027", "text": "已登记您的号码13800001234，快递员会提前联系您", "block": false, "why": "warn-only"},
+  {"id": "r028", "text": "也不是说您肤质有问题哈，每个人的皮肤状态本来就不一样", "block": false, "why": "near-miss"},
+  {"id": "r029", "text": "敏感肌闭眼入就行，百分百不踩雷", "block": true, "why": "absolute"},
+  {"id": "r030", "text": "您的感受我完全理解，这件事我会一直跟进到底", "block": false, "why": "clean"}
+]

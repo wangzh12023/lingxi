@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2026-10-12T06:31:05.849Z",
+  "sizes": {
+    "dev": 44,
+    "test": 66,
+    "repliesDev": 20,
+    "repliesTest": 30
+  },
+  "labelCounts": {
+    "intents": 13,
+    "emotions": 8
+  },
+  "baseline": {
+    "n": 66,
+    "intentAcc": 30.3,
+    "intentTop2": 30.3,
+    "emotionAcc": 34.8,
+    "polarityAcc": 62.1,
+    "riskPrecision": 0,
+    "riskRecall": 0,
+    "riskF1": 0,
+    "riskExact": 72.7,
+    "riskyCaught": 0,
+    "riskyN": 18,
+    "falseAlarm": 0,
+    "cleanN": 48,
+    "intentLabel": "complaint",
+    "emotionLabel": "anger"
+  },
+  "rules": {
+    "dev": {
+      "n": 44,
+      "intentAcc": 97.7,
+      "intentTop2": 97.7,
+      "emotionAcc": 90.9,
+      "polarityAcc": 90.9,
+      "riskPrecision": 100,
+      "riskRecall": 100,
+      "riskF1": 100,
+      "riskExact": 100,
+      "riskyCaught": 100,
+      "riskyN": 12,
+      "falseAlarm": 0,
+      "cleanN": 32
+    },
+    "test": {
+      "n": 66,
+      "intentAcc": 59.1,
+      "intentTop2": 59.1,
+      "emotionAcc": 47,
+      "polarityAcc": 50,
+      "riskPrecision": 80,
+      "riskRecall": 20,
+      "riskF1": 32,
+      "riskExact": 77.3,
+      "riskyCaught": 22.2,
+      "riskyN": 18,
+      "falseAlarm": 2.1,
+      "cleanN": 48
+    }
+  },
+  "compliance": {
+    "dev": {
+      "n": 20,
+      "violating": 10,
+      "accuracy": 100,
+      "precision": 100,
+      "recall": 100,
+      "falseBlock": 0,
+      "misses": []
+    },
+    "test": {
+      "n": 30,
+      "violating": 15,
+      "accuracy": 73.3,
+      "precision": 88.9,
+      "recall": 53.3,
+      "falseBlock": 6.7,
+      "missCount": 8
+    }
+  },
+  "llm": null
+}

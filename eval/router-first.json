@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-12T08:05:01.183Z",
+  "note": "First measurement of the router on the blind set, before the sensitive-cue screen was added. Frozen.",
+  "share": {
+    "fast": 0.7,
+    "lite": 20,
+    "full": 79.3
+  },
+  "counts": {
+    "fast": 1,
+    "lite": 30,
+    "full": 119
+  },
+  "liteN": 30,
+  "liteIntentAcc": 80,
+  "riskyN": 49,
+  "riskyKeptFromModel": 3
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "12900478d560b8dadd23669a738f9acc331797f50899b44f58c75e1df102ecb7",
+  "files": [
+    "f-messages-1.json",
+    "f-messages-2.json",
+    "f-messages-3.json",
+    "f-messages-4.json",
+    "f-replies-1.json",
+    "f-replies-2.json",
+    "sessions-1.json",
+    "sessions-2.json"
+  ],
+  "frozenAt": "2026-10-14T06:29:22.538Z",
+  "note": "冻结后任何修改都会让评测脚本拒绝运行。"
+}

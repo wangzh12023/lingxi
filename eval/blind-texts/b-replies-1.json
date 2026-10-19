@@ -1,0 +1,17 @@
+[
+ {"id": "r001", "block": false},
+ {"id": "r002", "block": true},
+ {"id": "r003", "block": true},
+ {"id": "r004", "block": true},
+ {"id": "r005", "block": false},
+ {"id": "r006", "block": false},
+ {"id": "r007", "block": true},
+ {"id": "r008", "block": false},
+ {"id": "r009", "block": true},
+ {"id": "r010", "block": true},
+ {"id": "r011", "block": false},
+ {"id": "r012", "block": true},
+ {"id": "r013", "block": false},
+ {"id": "r014", "block": true},
+ {"id": "r015", "block": false}
+]

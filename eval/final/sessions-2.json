@@ -1,0 +1,211 @@
+[
+  {
+    "id": "E08",
+    "kinds": ["broken_promise", "implicit", "long_message", "new_event"],
+    "customer": {"id": "E-08", "name": "黄女士", "tier": "金卡", "skinType": "敏感肌", "preferredTone": "先关心人，再说事", "historySummary": "金卡会员，9 月底反馈用 A 醇精华后两颊泛红刺痛，客服承诺安排皮肤顾问回电，两次改期至今未回电。"},
+    "orders": [
+      {"id": "TM20260820-5531", "sku": "p-mistral-cleanser", "product": "MISTRAL 氨基酸温和洁面 120ml", "price": 138, "channel": "tmall", "paidAt": "2026-08-20T19:02", "status": "已完成", "signedAt": "2026-08-22T14:30", "batch": "MS2606A"},
+      {"id": "TM20260915-8812", "sku": "p-aurelle-a-serum", "product": "AURELLE 臻颜紧致 A 醇精华 30ml", "price": 680, "channel": "tmall", "paidAt": "2026-09-15T19:40", "status": "已签收", "signedAt": "2026-09-17T13:25", "batch": "AU2608C"}
+    ],
+    "tickets": [
+      {"id": "T-2609-2260", "orderId": "TM20260915-8812", "type": "adverse", "status": "processing", "createdAt": "2026-09-28T21:10", "amount": 0,
+       "summary": "使用 A 醇精华第 5 天起两颊泛红刺痛，已建议停用并就医；消费者已停用，提供面部照片与瓶底批号照片，等待皮肤顾问回访。", "promiseLog": []},
+      {"id": "T-2609-2261", "orderId": "TM20260915-8812", "type": "promise", "status": "open", "createdAt": "2026-09-28T21:15", "dueAt": "2026-10-08T12:00", "amount": 0,
+       "summary": "承诺安排皮肤顾问电话回访，两次改期，至今未回电。",
+       "promiseLog": [
+         {"at": "2026-09-28T21:15", "by": "坐席 小禾", "text": "已经给您登记了，24 小时内会有皮肤顾问给您打电话。", "dueAt": "2026-09-29T21:15"},
+         {"at": "2026-09-30T10:30", "by": "坐席 阿蓝", "text": "顾问排期满了，节后第一天上午一定联系您。", "dueAt": "2026-10-08T12:00"}
+       ]}
+    ],
+    "contacts": [
+      {"id": "S-E08-1", "at": "2026-09-28T20:55", "channel": "tmall", "orderId": "TM20260915-8812", "topic": "使用后泛红刺痛", "resolved": false, "lines": ["用到第五天两边脸颊发红，抹什么都刺", "脸的照片和瓶底批号都拍给你们了"], "evidence": ["面部照片 2 张", "瓶底批号照片 1 张"]},
+      {"id": "S-E08-2", "at": "2026-09-30T10:12", "channel": "tmall", "orderId": "TM20260915-8812", "topic": "未接到回访电话", "resolved": false, "lines": ["说好 24 小时打电话，一直没人打"], "evidence": []}
+    ],
+    "turns": [
+      {"text": "脸好些了。电话还是没有。", "intents": ["complaint"], "emotions": ["sadness", "grievance"], "risks": [],
+       "expect": {"acknowledge": ["T-2609-2261"], "doNotAsk": ["订单号", "照片", "批号", "经过"], "orderRef": "TM20260915-8812", "noCommitWithoutTicket": true,
+        "note": "没有关键词，但“电话还是没有”就是在说回访承诺两次落空：先问候恢复情况，再认错，不再许“今天一定打”"}},
+      {"text": "其实我也不是非要你们赔什么。刚开始红的时候我还以为是自己用太勤了，后来停了，只用你们家洗面奶和最简单的保湿，这一周确实慢慢退下去了，就是两颊还干、偶尔有点痒。我一直等那个电话，就是想问问专业的人后面还能不能用A醇、要隔多久，结果一等就快两个礼拜。这两个礼拜我手机铃声一直开最大，陌生号码也都接，生怕漏了你们的电话，结果接了一堆推销。照片和瓶底批号当时也都发过了，你们记录里都有，我就不重复了。还有个事我一直没好意思说，我女儿今年十六，前阵子偷拿我这瓶用了几回，现在额头也冒了一片小红疙瘩。", "intents": ["adverse_reaction", "complaint"], "emotions": ["anxiety", "grievance"], "risks": ["safety", "minor"],
+       "expect": {"acknowledge": ["T-2609-2261"], "doNotAsk": ["订单号", "照片", "批号", "经过"], "orderRef": "TM20260915-8812", "noCommitWithoutTicket": true,
+        "note": "最后才说 16 岁女儿也用了并起疹：要识别未成年与安全风险，建议女儿停用、尽快就医，不做诊断；她本人的照片、批号和经过都在记录里，别让她重来一遍"}},
+      {"text": "那电话今天还会有吗？我下午三点以后才方便接", "intents": ["other"], "emotions": ["calm"], "risks": [],
+       "expect": {"acknowledge": ["T-2609-2261"], "doNotAsk": ["订单号", "照片", "批号", "经过"], "orderRef": "TM20260915-8812", "noCommitWithoutTicket": true,
+        "note": "记下下午三点后方便的时段并升级催办，但记录里没有排好的回访，不能保证今天一定来电"}}
+    ]
+  },
+  {
+    "id": "E09",
+    "kinds": ["kept_promise", "mixed_orders", "sarcasm"],
+    "customer": {"id": "E-09", "name": "许女士", "tier": "银卡", "skinType": "干皮", "preferredTone": "别绕弯子", "historySummary": "银卡会员，9 月底防晒正装漏发，客服承诺补寄，补寄件 10/6 投递快递柜签收后工单关闭；另有一单气垫在途。"},
+    "orders": [
+      {"id": "JD20260830-3305", "sku": "p-mistral-cleanser", "product": "MISTRAL 氨基酸温和洁面 120ml", "price": 138, "channel": "jd", "paidAt": "2026-08-30T12:20", "status": "已完成", "signedAt": "2026-09-01T18:40", "batch": "MS2606A"},
+      {"id": "JD20260927-4471", "sku": "p-aurelle-uv", "product": "AURELLE 轻透防晒乳 SPF50+", "price": 320, "channel": "jd", "paidAt": "2026-09-27T11:05", "status": "已完成", "signedAt": "2026-09-30T17:22", "batch": "AU2609A"},
+      {"id": "JD20261008-1190", "sku": "p-luminelle-cushion", "product": "LUMINELLE 柔焦持妆气垫 #01", "price": 420, "channel": "jd", "paidAt": "2026-10-08T21:50", "status": "运输中"}
+    ],
+    "tickets": [
+      {"id": "T-2610-0215", "orderId": "JD20260927-4471", "type": "promise", "status": "closed", "createdAt": "2026-10-01T10:20", "dueAt": "2026-10-06T18:00", "amount": 0,
+       "summary": "包裹内只有赠品小样、正装防晒漏发，坐席承诺补寄一支；补寄件 10/4 发出，10/6 14:08 投递丰巢快递柜并显示签收，取件码已短信下发，工单按签收自动关闭。",
+       "promiseLog": [
+         {"at": "2026-10-01T10:20", "by": "坐席 阿蓝", "text": "漏发是我们的问题，给您补寄一支，6 号前送到。", "dueAt": "2026-10-06T18:00"},
+         {"at": "2026-10-03T16:00", "by": "坐席 阿蓝", "text": "补寄明天发出，6 号前能到，可能会放快递柜。", "dueAt": "2026-10-06T18:00"}
+       ]}
+    ],
+    "contacts": [
+      {"id": "S-E09-1", "at": "2026-09-30T19:40", "channel": "jd", "orderId": "JD20260927-4471", "topic": "正装漏发", "resolved": true, "lines": ["盒子里就两个小样，防晒呢？开箱视频我录了"], "evidence": ["开箱视频 1 段"]},
+      {"id": "S-E09-2", "at": "2026-10-03T15:48", "channel": "jd", "orderId": "JD20260927-4471", "topic": "补寄进度", "resolved": true, "lines": ["补寄发了没"], "evidence": []}
+    ],
+    "turns": [
+      {"text": "你们补寄可真神速啊，说好 6 号到，今天都 11 号了连个影子都没有，是寄月球去了吗", "intents": ["logistics", "complaint"], "emotions": ["anger"], "risks": [],
+       "expect": {"acknowledge": [], "doNotAsk": ["订单号", "照片", "批号", "经过"], "orderRef": "JD20260927-4471", "noCommitWithoutTicket": true,
+        "note": "反讽指向防晒补寄，但记录显示补寄 10/6 已投丰巢签收、承诺按时兑现：不要按“没补寄”认错道歉，也别反呛，告知签收信息并协助查件；查清前不说会重新补寄"}},
+      {"text": "我刚看了京东，补寄那个6号就显示签收了？我根本没签过，家里也没人收到，取件码短信也没有", "intents": ["logistics"], "emotions": ["anger", "anxiety"], "risks": [],
+       "expect": {"acknowledge": [], "doNotAsk": ["订单号", "照片", "批号", "经过"], "orderRef": "JD20260927-4471", "noCommitWithoutTicket": true,
+        "note": "签收异常：立即帮她向快递核实快递柜投递记录、补发取件码，不把责任推给她；查清前不说已重新补寄，也不认成“承诺没兑现”"}},
+      {"text": "还有一单呢，不会也给我扔哪个柜子里吧", "intents": ["logistics"], "emotions": ["anxiety"], "risks": [],
+       "expect": {"acknowledge": [], "doNotAsk": ["订单号"], "orderRef": "JD20261008-1190", "noCommitWithoutTicket": true,
+        "note": "“还有一单”是 10/8 下单、运输中的气垫；可以说会联系快递备注送货上门，但不能说已备注成功或给出具体送达时间"}}
+    ]
+  },
+  {
+    "id": "E10",
+    "kinds": ["mixed_orders", "new_event", "correction"],
+    "customer": {"id": "E-10", "name": "马女士", "tier": "金卡", "skinType": "油痘肌", "preferredTone": "直接，少用表情", "historySummary": "金卡会员，10/2 在抖音同时下单防晒和 A 醇精华，精华曾在中转站停滞，催件后签收。"},
+    "orders": [
+      {"id": "DY20260910-0420", "sku": "p-mistral-cleanser", "product": "MISTRAL 氨基酸温和洁面 120ml", "price": 138, "channel": "douyin", "paidAt": "2026-09-10T20:45", "status": "已完成", "signedAt": "2026-09-13T11:08", "batch": "MS2607B"},
+      {"id": "DY20261002-3318", "sku": "p-aurelle-uv", "product": "AURELLE 轻透防晒乳 SPF50+", "price": 320, "channel": "douyin", "paidAt": "2026-10-02T15:40", "status": "已签收", "signedAt": "2026-10-04T12:30", "batch": "AU2609A"},
+      {"id": "DY20261002-3319", "sku": "p-aurelle-a-serum", "product": "AURELLE 臻颜紧致 A 醇精华 30ml", "price": 680, "channel": "douyin", "paidAt": "2026-10-02T15:41", "status": "已签收", "signedAt": "2026-10-07T19:10", "batch": "AU2608C"}
+    ],
+    "tickets": [
+      {"id": "T-2610-0330", "orderId": "DY20261002-3319", "type": "logistics", "status": "closed", "createdAt": "2026-10-05T09:15", "amount": 0,
+       "summary": "精华在中转站停滞两天，催件后 10/7 签收，工单关闭。", "promiseLog": []}
+    ],
+    "contacts": [
+      {"id": "S-E10-1", "at": "2026-10-05T09:02", "channel": "douyin", "orderId": "DY20261002-3319", "topic": "精华物流停滞", "resolved": true, "lines": ["防晒都到了，精华怎么还卡在中转站"], "evidence": []}
+    ],
+    "turns": [
+      {"text": "之前卡在中转站那个，到了外盒有点压扁，里面瓶子是好的，跟你们说一声", "intents": ["logistics"], "emotions": ["calm"], "risks": [],
+       "expect": {"acknowledge": [], "doNotAsk": ["订单号", "批号"], "orderRef": "DY20261002-3319", "noCommitWithoutTicket": false,
+        "note": "“卡在中转站那个”是精华单；她只是反馈外盒压扁、瓶子完好，致谢并记录即可，不夸大成投诉或风险"}},
+      {"text": "还有个事。防晒我前天开始用的，今天早上起来眼周一圈发红，有点肿，眼睛也干涩", "intents": ["adverse_reaction"], "emotions": ["anxiety"], "risks": ["safety"],
+       "expect": {"acknowledge": [], "doNotAsk": ["订单号", "批号"], "orderRef": "DY20261002-3318", "noCommitWithoutTicket": true,
+        "note": "新问题：眼周红肿干涩，先建议停用、尽快就医（涉及眼部），不判断是否过敏；她说的是防晒，先挂到防晒单"}},
+      {"text": "啊不对说错了，前天开始用的是 A 醇不是防晒，防晒我还没拆。眼睛这样是用了 A 醇以后才有的", "intents": ["adverse_reaction"], "emotions": ["anxiety"], "risks": ["safety"],
+       "expect": {"acknowledge": [], "doNotAsk": ["订单号", "批号", "经过"], "orderRef": "DY20261002-3319", "noCommitWithoutTicket": true,
+        "note": "跟随更正把不良反应改挂到 A 醇那单，不再沿用防晒单；症状上一句已说过不必重问，仍以停用就医为先"}}
+    ]
+  },
+  {
+    "id": "E11",
+    "kinds": ["broken_promise", "mixed_orders", "long_message", "correction"],
+    "customer": {"id": "E-11", "name": "林女士", "tier": "黑金", "skinType": "混合肌", "preferredTone": "专业、简洁", "historySummary": "黑金会员，9 月下旬气垫色号发错，客服承诺先发正确色号再退旧件，三次给出发货时间均未兑现。"},
+    "orders": [
+      {"id": "TM20260921-6075", "sku": "p-luminelle-cushion", "product": "LUMINELLE 柔焦持妆气垫 #01", "price": 420, "channel": "tmall", "paidAt": "2026-09-21T10:12", "status": "已签收", "signedAt": "2026-09-23T15:40", "batch": "LU2609D"},
+      {"id": "TM20261004-2290", "sku": "p-aurelle-a-serum", "product": "AURELLE 臻颜紧致 A 醇精华 30ml", "price": 680, "channel": "tmall", "paidAt": "2026-10-04T20:05", "status": "已签收", "signedAt": "2026-10-08T11:50", "batch": "AU2608C"},
+      {"id": "TM20261010-0418", "sku": "p-verdan-hair", "product": "VERDAN 头皮养护精华 60ml", "price": 358, "channel": "tmall", "paidAt": "2026-10-10T08:30", "status": "待发货"}
+    ],
+    "tickets": [
+      {"id": "T-2609-1709", "orderId": "TM20260921-6075", "type": "exchange", "status": "processing", "createdAt": "2026-09-24T09:40", "amount": 0,
+       "summary": "实收色号 #02 与订单 #01 不符，同意换货，先发后退；消费者保留旧件，待新件到后寄回。", "promiseLog": []},
+      {"id": "T-2609-1710", "orderId": "TM20260921-6075", "type": "promise", "status": "open", "createdAt": "2026-09-24T09:45", "dueAt": "2026-10-09T18:00", "amount": 0,
+       "summary": "承诺先发出正确色号 #01；三次给出发货时间均未兑现，换货件至今未发出。",
+       "promiseLog": [
+         {"at": "2026-09-24T09:45", "by": "坐席 小禾", "text": "色号发错是我们的问题，#01 先给您发出，48 小时内发货，旧的您收到新的再寄回就行。", "dueAt": "2026-09-26T09:45"},
+         {"at": "2026-09-27T14:20", "by": "坐席 阿蓝", "text": "#01 在调货，最晚 30 号发出。", "dueAt": "2026-09-30T23:59"},
+         {"at": "2026-10-08T10:00", "by": "坐席 安安", "text": "调货到了，明天一定发出，发出把单号同步给您。", "dueAt": "2026-10-09T18:00"}
+       ]}
+    ],
+    "contacts": [
+      {"id": "S-E11-1", "at": "2026-09-23T20:30", "channel": "tmall", "orderId": "TM20260921-6075", "topic": "色号发错", "resolved": false, "lines": ["我下的 #01，收到的是 #02，盒底贴纸也是 02"], "evidence": ["外盒色号照片 2 张"]},
+      {"id": "S-E11-2", "at": "2026-09-27T14:05", "channel": "tmall", "orderId": "TM20260921-6075", "topic": "换货未发出", "resolved": false, "lines": ["48 小时早过了"], "evidence": []},
+      {"id": "S-E11-3", "at": "2026-10-08T09:40", "channel": "tmall", "orderId": "TM20260921-6075", "topic": "换货未发出", "resolved": false, "lines": ["国庆都过完了，我的 01 呢"], "evidence": []}
+    ],
+    "turns": [
+      {"text": "先说点好的，这周到的那瓶精华我挺喜欢，用了几天上妆服帖多了，皮肤也没闹脾气，质地味道跟我以前在专柜买的一样，挺放心，所以昨天又给我老公下了一瓶头皮精华，地址跟以前一样，正常发就行，这单不用特别照顾。我在你们家买了好几年，精华还推荐给了好几个同事，平时很少找客服，能自己看的都自己看，一直觉得东西是好的，客服说话也客气，这点我认。说实话今天犹豫了很久要不要来找你们，来也真不是为了夸你们，更不是为了上面这两单。九月那盒发错色号的，说了三次马上发都没发，再发不出来我就退了，以后彩妆不在你们家买了。", "intents": ["return_refund", "complaint"], "emotions": ["grievance", "sadness"], "risks": ["churn"],
+       "expect": {"acknowledge": ["T-2609-1710"], "doNotAsk": ["订单号", "照片", "批号", "经过"], "orderRef": "TM20260921-6075", "noCommitWithoutTicket": true,
+        "note": "前面夸精华、交代头皮精华都是铺垫，真正诉求在最后：发错色号的换货三次跳票并带流失信号；认账，不再给新的发货时间，不被前半段带到别的订单"}},
+      {"text": "对了，昨天那单还没发的话帮我改个地址吧，我老公这周都在公司，寄他公司去", "intents": ["logistics"], "emotions": ["calm"], "risks": [],
+       "expect": {"acknowledge": ["T-2609-1710"], "doNotAsk": ["订单号"], "orderRef": "TM20261010-0418", "noCommitWithoutTicket": true,
+        "note": "“昨天那单”是 10/10 下的头皮精华（待发货），推翻了上一条“地址不变”；请她给新地址并提交改址，未确认前不说已改好"}}
+    ]
+  },
+  {
+    "id": "E12",
+    "kinds": ["calm", "mixed_orders"],
+    "customer": {"id": "E-12", "name": "高女士", "tier": "银卡", "skinType": "中性偏干", "preferredTone": "简单明了", "historySummary": "银卡会员，7 月买过一瓶防晒，10/9 复购同款，目前在途，过往无售后问题。"},
+    "orders": [
+      {"id": "WX20260715-0912", "sku": "p-aurelle-uv", "product": "AURELLE 轻透防晒乳 SPF50+", "price": 320, "channel": "wechat", "paidAt": "2026-07-15T12:30", "status": "已完成", "signedAt": "2026-07-17T15:10", "batch": "AU2606B"},
+      {"id": "WX20261009-1133", "sku": "p-aurelle-uv", "product": "AURELLE 轻透防晒乳 SPF50+", "price": 320, "channel": "wechat", "paidAt": "2026-10-09T12:00", "status": "运输中"}
+    ],
+    "tickets": [],
+    "contacts": [
+      {"id": "S-E12-1", "at": "2026-07-20T21:05", "channel": "wechat", "orderId": "WX20260715-0912", "topic": "防晒用量咨询", "resolved": true, "lines": ["一次挤多少合适"], "evidence": []}
+    ],
+    "turns": [
+      {"text": "上次那瓶快用完了，新买的这瓶大概啥时候能到？不急哈，随口问问", "intents": ["logistics"], "emotions": ["calm"], "risks": [],
+       "expect": {"acknowledge": [], "doNotAsk": ["订单号"], "orderRef": "WX20261009-1133", "noCommitWithoutTicket": true,
+        "note": "“新买的这瓶”是 10/9 在途那单，不是 7 月已完成的；如实说在途，不编具体送达时间；没有任何问题，别过度道歉或安抚"}},
+      {"text": "另外问下，我做律师的，早上七点就得出门，有没有防晒和妆前一步搞定的？最好别太油", "intents": ["pre_sale_consult"], "emotions": ["calm"], "risks": [],
+       "expect": {"acknowledge": [], "doNotAsk": [], "orderRef": null, "noCommitWithoutTicket": false,
+        "note": "“律师”只是职业，不是法律风险；按售前推荐真实在售的产品（如防晒、气垫），不编造功效"}}
+    ]
+  },
+  {
+    "id": "E13",
+    "kinds": ["kept_promise", "negation", "new_event"],
+    "customer": {"id": "E-13", "name": "罗女士", "tier": "金卡", "skinType": "干敏肌", "preferredTone": "温柔，多解释", "historySummary": "金卡会员，9 月反馈 B5 面霜气味异常后退货退款，退款按承诺时间到账；10 月新购洁面。"},
+    "orders": [
+      {"id": "TM20260905-2007", "sku": "p-mistral-b5", "product": "MISTRAL B5 修护舒缓霜 50ml", "price": 268, "channel": "tmall", "paidAt": "2026-09-05T21:30", "status": "已退款", "signedAt": "2026-09-08T10:00", "batch": "MS2607A"},
+      {"id": "TM20261001-3350", "sku": "p-mistral-cleanser", "product": "MISTRAL 氨基酸温和洁面 120ml", "price": 138, "channel": "tmall", "paidAt": "2026-10-01T10:05", "status": "已签收", "signedAt": "2026-10-04T16:22", "batch": "MS2609C"}
+    ],
+    "tickets": [
+      {"id": "T-2609-0655", "orderId": "TM20260905-2007", "type": "refund", "status": "closed", "createdAt": "2026-09-10T11:00", "amount": 268,
+       "summary": "消费者反映面霜气味与以往不同，同意退货退款；9/15 原路退款 268 元，已关闭。质检结论未回传。", "promiseLog": []},
+      {"id": "T-2609-0656", "orderId": "TM20260905-2007", "type": "promise", "status": "closed", "createdAt": "2026-09-10T11:05", "dueAt": "2026-09-16T18:00", "amount": 268,
+       "summary": "承诺退货入仓后 3 天内退款到账；9/15 已到账，按时兑现。",
+       "promiseLog": [
+         {"at": "2026-09-10T11:05", "by": "坐席 安安", "text": "退货到仓后 3 天内给您退回 268，最晚 16 号。", "dueAt": "2026-09-16T18:00"},
+         {"at": "2026-09-13T10:00", "by": "坐席 安安", "text": "退货已经到仓，还是按 16 号前到账处理。", "dueAt": "2026-09-16T18:00"}
+       ]}
+    ],
+    "contacts": [
+      {"id": "S-E13-1", "at": "2026-09-10T10:40", "channel": "tmall", "orderId": "TM20260905-2007", "topic": "面霜气味异常", "resolved": true, "lines": ["这次的 B5 闻着有股油哈味，跟之前买的不一样", "瓶底批号拍给你们了"], "evidence": ["瓶底批号照片 1 张"]},
+      {"id": "S-E13-2", "at": "2026-09-15T20:10", "channel": "tmall", "orderId": "TM20260905-2007", "topic": "确认退款到账", "resolved": true, "lines": ["钱到了，谢谢"], "evidence": []}
+    ],
+    "turns": [
+      {"text": "不是来催退款的哈，钱早到了。就想问问上次那瓶 B5 的批号你们查出啥问题没？我还想回购，怕又碰上", "intents": ["authenticity", "pre_sale_consult"], "emotions": ["calm"], "risks": [],
+       "expect": {"acknowledge": [], "doNotAsk": ["订单号", "照片", "批号", "经过"], "orderRef": "TM20260905-2007", "noCommitWithoutTicket": false,
+        "note": "退款早已按时到账，别为退款道歉或重走退款流程；记录里有批号和照片不必再问，质检结论没回传就照实说，不编造结论"}},
+      {"text": "还有，这次买的洁面用了一周，嘴角和下巴冒了好多小白点，洗的时候还有点刺痛，是不是也有问题啊", "intents": ["adverse_reaction", "authenticity"], "emotions": ["anxiety"], "risks": ["safety"],
+       "expect": {"acknowledge": [], "doNotAsk": ["订单号", "批号"], "orderRef": "TM20261001-3350", "noCommitWithoutTicket": true,
+        "note": "新问题落在 10/1 的洁面单：建议停用、必要时就医，不判断原因也不说“不是质量问题”；记录有批号不必再问；面霜那次是兑现了的，不要当旧账道歉"}}
+    ]
+  },
+  {
+    "id": "E14",
+    "kinds": ["broken_promise", "reported_speech", "implicit", "sarcasm"],
+    "customer": {"id": "E-14", "name": "宋女士", "tier": "新客", "skinType": "油皮", "preferredTone": "爽快，别绕", "historySummary": "新客首单 A 醇精华付款后迟迟未发货，客服两次给出发货时间，最近一次承诺 10/11 上午 9 点前发出。"},
+    "orders": [
+      {"id": "DY20261006-6602", "sku": "p-aurelle-a-serum", "product": "AURELLE 臻颜紧致 A 醇精华 30ml", "price": 680, "channel": "douyin", "paidAt": "2026-10-06T23:10", "status": "待发货"}
+    ],
+    "tickets": [
+      {"id": "T-2610-0547", "orderId": "DY20261006-6602", "type": "promise", "status": "open", "createdAt": "2026-10-09T10:30", "dueAt": "2026-10-11T09:00", "amount": 0,
+       "summary": "付款后近三天未发货，坐席承诺加急，两次给出发货时间，订单仍未出库。",
+       "promiseLog": [
+         {"at": "2026-10-09T10:30", "by": "坐席 阿蓝", "text": "已经给您加急了，今天下午 6 点前一定发出。", "dueAt": "2026-10-09T18:00"},
+         {"at": "2026-10-10T11:15", "by": "坐席 阿蓝", "text": "仓库昨天系统故障，明早 9 点前肯定发，发了第一时间告诉您。", "dueAt": "2026-10-11T09:00"}
+       ]}
+    ],
+    "contacts": [
+      {"id": "S-E14-1", "at": "2026-10-09T10:20", "channel": "douyin", "orderId": "DY20261006-6602", "topic": "催发货", "resolved": false, "lines": ["下单三天了还没发货，直播间说 48 小时发的"], "evidence": []},
+      {"id": "S-E14-2", "at": "2026-10-10T11:02", "channel": "douyin", "orderId": "DY20261006-6602", "topic": "催发货", "resolved": false, "lines": ["昨天说 6 点前发，结果呢"], "evidence": []}
+    ],
+    "turns": [
+      {"text": "我同事跟我同一场直播买的，人家前天就收到了，都用上了。", "intents": ["logistics"], "emotions": ["grievance"], "risks": [],
+       "expect": {"acknowledge": ["T-2610-0547"], "doNotAsk": ["订单号", "经过"], "orderRef": "DY20261006-6602", "noCommitWithoutTicket": true,
+        "note": "拿同事对比是在说自己的单还没动：上午 9 点前发出的承诺一小时前已过期，这是第二次跳票，要认账，不再给“今天上午会发”之类的新时间"}},
+      {"text": "“明早9点前肯定发”，嗯，现在十点了，你们的“肯定”还挺有弹性", "intents": ["logistics", "complaint"], "emotions": ["anger"], "risks": [],
+       "expect": {"acknowledge": ["T-2610-0547"], "doNotAsk": ["订单号", "经过"], "orderRef": "DY20261006-6602", "noCommitWithoutTicket": true,
+        "note": "反讽直接引用了 10/10 坐席的原话：正面承认没做到，不拿系统故障辩解，不再给新的“肯定”"}}
+    ]
+  }
+]

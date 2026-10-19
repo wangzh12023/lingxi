@@ -1,0 +1,17 @@
+[
+  {"id": "r046", "text": "小红书那篇帖子您先删一下，补偿的事都好商量", "block": true, "why": "review-for-benefit"},
+  {"id": "r047", "text": "怀孕期间想用的话，建议先问问医生的意见", "block": false, "why": "clean"},
+  {"id": "r048", "text": "您说的发痒脱皮，听着像是湿疹犯了", "block": true, "why": "diagnosis"},
+  {"id": "r049", "text": "效果这块我们没法打包票，每个人用下来感受会不一样", "block": false, "why": "near-miss"},
+  {"id": "r050", "text": "这支唇膏能修复唇炎，干裂起皮涂两天就好", "block": true, "why": "medical-claim"},
+  {"id": "r051", "text": "包装被拆的情况我们记录了，会调取出库视频核实", "block": false, "why": "clean"},
+  {"id": "r052", "text": "膏体分层是天气太热导致的，和产品本身无关", "block": true, "why": "shift-blame"},
+  {"id": "r053", "text": "您的预留号码是13900005678对吧，我这边核对一下", "block": false, "why": "warn-only"},
+  {"id": "r054", "text": "用完一瓶保证淡斑，没效果您直接来找我", "block": true, "why": "absolute"},
+  {"id": "r055", "text": "您那条追评改成好评的话，赠品我再给您加一份", "block": true, "why": "review-for-benefit"},
+  {"id": "r056", "text": "您刚才说“是不是我用法不对”，其实不一定，我们先查这批货", "block": false, "why": "near-miss"},
+  {"id": "r057", "text": "这款有30ml和50ml两个规格，需要帮您对比下价格吗", "block": false, "why": "clean"},
+  {"id": "r058", "text": "泵头是您按太猛才卡住的，这种不在保修范围", "block": true, "why": "blame-customer"},
+  {"id": "r059", "text": "您转述的“百分百不过敏”不是我们的宣传口径，抱歉造成误解", "block": false, "why": "near-miss"},
+  {"id": "r060", "text": "优惠券已经补发到您账户了，下单时会自动抵扣", "block": false, "why": "clean"}
+]

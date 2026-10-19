@@ -1,0 +1,35 @@
+{
+  "condition": "rules",
+  "mock": false,
+  "setHash": "12900478d560b8dadd23669a738f9acc331797f50899b44f58c75e1df102ecb7",
+  "model": null,
+  "summary": {
+    "turns": 36,
+    "intentAcc": 36.1,
+    "intentMacroF1": 32.3,
+    "riskRecallByCategory": {
+      "churn": 0,
+      "safety": 60,
+      "legal": 100,
+      "minor": 0
+    },
+    "severeMissed": "3/7",
+    "falseAlarmOnCleanTurns": 7.1,
+    "acknowledgedBrokenPromise": 100,
+    "remedyActionProposed": 100,
+    "falseApology": 0,
+    "reaskedKnownInfo": 9,
+    "wrongOrderCited": 4,
+    "unsupportedCommitments": 0,
+    "factErrors": 0,
+    "policyClaimSupport": 80,
+    "modelCalls": 0,
+    "modelFailures": 0,
+    "tokensPerTurn": 0,
+    "costPerTurnYuan": 0,
+    "latencyMs": {
+      "p50": 1,
+      "p95": 2
+    }
+  }
+}

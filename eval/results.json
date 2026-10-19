@@ -1,0 +1,1111 @@
+{
+  "generatedAt": "2026-10-14T06:40:06.525Z",
+  "sizes": {
+    "dev": 44,
+    "holdout1": 66,
+    "repliesDev": 20,
+    "repliesHoldout1": 30,
+    "validationMessages": 150,
+    "validationReplies": 60,
+    "finalMessages": 120,
+    "finalReplies": 40
+  },
+  "labels": {
+    "intents": 13,
+    "emotions": 8
+  },
+  "round1": {
+    "at": "2026-10-12T06:31:05.849Z",
+    "baseline": {
+      "n": 66,
+      "intentAcc": 30.3,
+      "intentTop2": 30.3,
+      "emotionAcc": 34.8,
+      "polarityAcc": 62.1,
+      "riskPrecision": 0,
+      "riskRecall": 0,
+      "riskF1": 0,
+      "riskExact": 72.7,
+      "riskyCaught": 0,
+      "riskyN": 18,
+      "falseAlarm": 0,
+      "cleanN": 48,
+      "intentLabel": "complaint",
+      "emotionLabel": "anger"
+    },
+    "rules": {
+      "n": 66,
+      "intentAcc": 59.1,
+      "intentTop2": 59.1,
+      "emotionAcc": 47,
+      "polarityAcc": 50,
+      "riskPrecision": 80,
+      "riskRecall": 20,
+      "riskF1": 32,
+      "riskExact": 77.3,
+      "riskyCaught": 22.2,
+      "riskyN": 18,
+      "falseAlarm": 2.1,
+      "cleanN": 48
+    },
+    "compliance": {
+      "n": 30,
+      "violating": 15,
+      "accuracy": 73.3,
+      "precision": 88.9,
+      "recall": 53.3,
+      "falseBlock": 6.7,
+      "missCount": 8
+    }
+  },
+  "tuning": {
+    "messages": {
+      "n": 110,
+      "intentAcc": 98.2,
+      "intentCI": [
+        93.6,
+        99.5
+      ],
+      "emotionAcc": 91.8,
+      "emotionCI": [
+        85.2,
+        95.6
+      ],
+      "polarityAcc": 93.6,
+      "riskPrecision": 100,
+      "riskRecall": 100,
+      "riskRecallCI": [
+        89.6,
+        100
+      ],
+      "riskF1": 100,
+      "byCategory": {
+        "safety": {
+          "gold": 10,
+          "recall": 100,
+          "precision": 100
+        },
+        "pr": {
+          "gold": 5,
+          "recall": 100,
+          "precision": 100
+        },
+        "legal": {
+          "gold": 5,
+          "recall": 100,
+          "precision": 100
+        },
+        "churn": {
+          "gold": 6,
+          "recall": 100,
+          "precision": 100
+        },
+        "minor": {
+          "gold": 5,
+          "recall": 100,
+          "precision": 100
+        },
+        "fraud": {
+          "gold": 2,
+          "recall": 100,
+          "precision": 100
+        },
+        "privacy": {
+          "gold": 0,
+          "recall": null,
+          "precision": null
+        }
+      },
+      "severeRecall": 100,
+      "severeMissed": 0,
+      "severeGold": 25,
+      "anyAlertCoverage": 100,
+      "trueRiskHit": 100,
+      "riskyN": 30,
+      "falseAlarm": 0,
+      "cleanN": 80
+    },
+    "compliance": {
+      "n": 50,
+      "violating": 25,
+      "accuracy": 100,
+      "precision": 100,
+      "recall": 100,
+      "recallCI": [
+        86.7,
+        100
+      ],
+      "falseBlock": 0,
+      "falseBlockCI": [
+        0,
+        13.3
+      ]
+    }
+  },
+  "validation": {
+    "agreement": {
+      "intent": 98.7,
+      "intentKappa": 0.99,
+      "emotion": 91.3,
+      "emotionKappa": 0.88,
+      "polarity": 94,
+      "riskExact": 100,
+      "consensusMessages": 135,
+      "block": 100,
+      "blockKappa": 1,
+      "consensusReplies": 60
+    },
+    "baseline": {
+      "n": 150,
+      "intentAcc": 16.7,
+      "intentCI": [
+        11.6,
+        23.4
+      ],
+      "emotionAcc": 18.7,
+      "emotionCI": [
+        13.2,
+        25.7
+      ],
+      "polarityAcc": 48.7,
+      "riskPrecision": 0,
+      "riskRecall": 0,
+      "riskRecallCI": [
+        0,
+        6.4
+      ],
+      "riskF1": 0,
+      "byCategory": {
+        "safety": {
+          "gold": 12,
+          "recall": 0,
+          "precision": null
+        },
+        "pr": {
+          "gold": 7,
+          "recall": 0,
+          "precision": null
+        },
+        "legal": {
+          "gold": 8,
+          "recall": 0,
+          "precision": null
+        },
+        "churn": {
+          "gold": 9,
+          "recall": 0,
+          "precision": null
+        },
+        "minor": {
+          "gold": 9,
+          "recall": 0,
+          "precision": null
+        },
+        "fraud": {
+          "gold": 7,
+          "recall": 0,
+          "precision": null
+        },
+        "privacy": {
+          "gold": 4,
+          "recall": 0,
+          "precision": null
+        }
+      },
+      "severeRecall": 0,
+      "severeMissed": 36,
+      "severeGold": 36,
+      "anyAlertCoverage": 0,
+      "trueRiskHit": 0,
+      "riskyN": 49,
+      "falseAlarm": 0,
+      "cleanN": 101,
+      "intentLabel": "complaint",
+      "emotionLabel": "anger"
+    },
+    "all": {
+      "n": 150,
+      "intentAcc": 58,
+      "intentCI": [
+        50,
+        65.6
+      ],
+      "emotionAcc": 54.7,
+      "emotionCI": [
+        46.7,
+        62.4
+      ],
+      "polarityAcc": 60.7,
+      "riskPrecision": 82.1,
+      "riskRecall": 57.1,
+      "riskRecallCI": [
+        44.1,
+        69.2
+      ],
+      "riskF1": 67.4,
+      "byCategory": {
+        "safety": {
+          "gold": 12,
+          "recall": 58.3,
+          "precision": 87.5
+        },
+        "pr": {
+          "gold": 7,
+          "recall": 28.6,
+          "precision": 100
+        },
+        "legal": {
+          "gold": 8,
+          "recall": 87.5,
+          "precision": 77.8
+        },
+        "churn": {
+          "gold": 9,
+          "recall": 22.2,
+          "precision": 66.7
+        },
+        "minor": {
+          "gold": 9,
+          "recall": 88.9,
+          "precision": 80
+        },
+        "fraud": {
+          "gold": 7,
+          "recall": 28.6,
+          "precision": 66.7
+        },
+        "privacy": {
+          "gold": 4,
+          "recall": 100,
+          "precision": 100
+        }
+      },
+      "severeRecall": 66.7,
+      "severeMissed": 12,
+      "severeGold": 36,
+      "anyAlertCoverage": 59.2,
+      "trueRiskHit": 59.2,
+      "riskyN": 49,
+      "falseAlarm": 5,
+      "cleanN": 101
+    },
+    "consensus": {
+      "baseline": {
+        "n": 135,
+        "intentAcc": 17,
+        "intentCI": [
+          11.6,
+          24.3
+        ],
+        "emotionAcc": 19.3,
+        "emotionCI": [
+          13.5,
+          26.7
+        ],
+        "polarityAcc": 48.1,
+        "riskPrecision": 0,
+        "riskRecall": 0,
+        "riskRecallCI": [
+          0,
+          7
+        ],
+        "riskF1": 0,
+        "byCategory": {
+          "safety": {
+            "gold": 11,
+            "recall": 0,
+            "precision": null
+          },
+          "pr": {
+            "gold": 5,
+            "recall": 0,
+            "precision": null
+          },
+          "legal": {
+            "gold": 8,
+            "recall": 0,
+            "precision": null
+          },
+          "churn": {
+            "gold": 9,
+            "recall": 0,
+            "precision": null
+          },
+          "minor": {
+            "gold": 8,
+            "recall": 0,
+            "precision": null
+          },
+          "fraud": {
+            "gold": 6,
+            "recall": 0,
+            "precision": null
+          },
+          "privacy": {
+            "gold": 4,
+            "recall": 0,
+            "precision": null
+          }
+        },
+        "severeRecall": 0,
+        "severeMissed": 32,
+        "severeGold": 32,
+        "anyAlertCoverage": 0,
+        "trueRiskHit": 0,
+        "riskyN": 44,
+        "falseAlarm": 0,
+        "cleanN": 91,
+        "intentLabel": "complaint",
+        "emotionLabel": "anger"
+      },
+      "rules": {
+        "n": 135,
+        "intentAcc": 57.8,
+        "intentCI": [
+          49.3,
+          65.8
+        ],
+        "emotionAcc": 58.5,
+        "emotionCI": [
+          50.1,
+          66.5
+        ],
+        "polarityAcc": 64.4,
+        "riskPrecision": 81.6,
+        "riskRecall": 60.8,
+        "riskRecallCI": [
+          47.1,
+          73
+        ],
+        "riskF1": 69.7,
+        "byCategory": {
+          "safety": {
+            "gold": 11,
+            "recall": 63.6,
+            "precision": 87.5
+          },
+          "pr": {
+            "gold": 5,
+            "recall": 40,
+            "precision": 100
+          },
+          "legal": {
+            "gold": 8,
+            "recall": 87.5,
+            "precision": 77.8
+          },
+          "churn": {
+            "gold": 9,
+            "recall": 22.2,
+            "precision": 66.7
+          },
+          "minor": {
+            "gold": 8,
+            "recall": 87.5,
+            "precision": 77.8
+          },
+          "fraud": {
+            "gold": 6,
+            "recall": 33.3,
+            "precision": 66.7
+          },
+          "privacy": {
+            "gold": 4,
+            "recall": 100,
+            "precision": 100
+          }
+        },
+        "severeRecall": 71.9,
+        "severeMissed": 9,
+        "severeGold": 32,
+        "anyAlertCoverage": 63.6,
+        "trueRiskHit": 63.6,
+        "riskyN": 44,
+        "falseAlarm": 5.5,
+        "cleanN": 91
+      }
+    },
+    "byKind": [
+      {
+        "kind": "plain",
+        "cn": "直白",
+        "n": 55,
+        "intentAcc": 76.4,
+        "emotionAcc": 70.9,
+        "riskRecall": 73.3
+      },
+      {
+        "kind": "colloquial",
+        "cn": "口语与网络用语",
+        "n": 25,
+        "intentAcc": 64,
+        "emotionAcc": 64,
+        "riskRecall": 69.2
+      },
+      {
+        "kind": "implicit",
+        "cn": "含蓄表达",
+        "n": 25,
+        "intentAcc": 4,
+        "emotionAcc": 20,
+        "riskRecall": 0
+      },
+      {
+        "kind": "sarcasm",
+        "cn": "反讽",
+        "n": 10,
+        "intentAcc": 60,
+        "emotionAcc": 20,
+        "riskRecall": 0
+      },
+      {
+        "kind": "negation",
+        "cn": "否定与转述",
+        "n": 12,
+        "intentAcc": 41.7,
+        "emotionAcc": 41.7,
+        "riskRecall": 100
+      },
+      {
+        "kind": "decoy",
+        "cn": "有风险词但无风险",
+        "n": 13,
+        "intentAcc": 61.5,
+        "emotionAcc": 46.2,
+        "riskRecall": 0
+      },
+      {
+        "kind": "multi",
+        "cn": "双意图",
+        "n": 10,
+        "intentAcc": 90,
+        "emotionAcc": 90,
+        "riskRecall": 0
+      }
+    ],
+    "compliance": {
+      "all": {
+        "n": 60,
+        "violating": 30,
+        "accuracy": 70,
+        "precision": 80,
+        "recall": 53.3,
+        "recallCI": [
+          36.1,
+          69.8
+        ],
+        "falseBlock": 13.3,
+        "falseBlockCI": [
+          5.3,
+          29.7
+        ]
+      },
+      "consensus": {
+        "n": 60,
+        "violating": 30,
+        "accuracy": 70,
+        "precision": 80,
+        "recall": 53.3,
+        "recallCI": [
+          36.1,
+          69.8
+        ],
+        "falseBlock": 13.3,
+        "falseBlockCI": [
+          5.3,
+          29.7
+        ]
+      }
+    },
+    "router": {
+      "share": {
+        "fast": 0.7,
+        "lite": 13.3,
+        "full": 86
+      },
+      "counts": {
+        "fast": 1,
+        "lite": 20,
+        "full": 129
+      },
+      "liteN": 20,
+      "liteIntentAcc": 75,
+      "riskyN": 49,
+      "riskyFull": 47,
+      "riskyLite": 2,
+      "riskyFast": 0,
+      "first": {
+        "at": "2026-10-12T08:05:01.183Z",
+        "note": "First measurement of the router on the blind set, before the sensitive-cue screen was added. Frozen.",
+        "share": {
+          "fast": 0.7,
+          "lite": 20,
+          "full": 79.3
+        },
+        "counts": {
+          "fast": 1,
+          "lite": 30,
+          "full": 119
+        },
+        "liteN": 30,
+        "liteIntentAcc": 80,
+        "riskyN": 49,
+        "riskyKeptFromModel": 3
+      }
+    }
+  },
+  "final": {
+    "status": {
+      "frozen": true,
+      "hash": "12900478d560b8dadd23669a738f9acc331797f50899b44f58c75e1df102ecb7",
+      "frozenAt": "2026-10-14T06:29:22.538Z",
+      "intact": true
+    },
+    "rules": {
+      "agreement": {
+        "intent": 96.7,
+        "intentKappa": 0.95,
+        "emotion": 88.3,
+        "emotionKappa": 0.81,
+        "polarity": 93.3,
+        "riskExact": 100,
+        "consensusMessages": 102,
+        "block": 100,
+        "blockKappa": 1,
+        "consensusReplies": 40
+      },
+      "baseline": {
+        "n": 120,
+        "intentAcc": 16.7,
+        "intentCI": [
+          11.1,
+          24.3
+        ],
+        "emotionAcc": 23.3,
+        "emotionCI": [
+          16.7,
+          31.7
+        ],
+        "polarityAcc": 52.5,
+        "riskPrecision": 0,
+        "riskRecall": 0,
+        "riskRecallCI": [
+          0,
+          7.6
+        ],
+        "riskF1": 0,
+        "byCategory": {
+          "safety": {
+            "gold": 10,
+            "recall": 0,
+            "precision": null
+          },
+          "pr": {
+            "gold": 7,
+            "recall": 0,
+            "precision": null
+          },
+          "legal": {
+            "gold": 6,
+            "recall": 0,
+            "precision": null
+          },
+          "churn": {
+            "gold": 7,
+            "recall": 0,
+            "precision": null
+          },
+          "minor": {
+            "gold": 7,
+            "recall": 0,
+            "precision": null
+          },
+          "fraud": {
+            "gold": 6,
+            "recall": 0,
+            "precision": null
+          },
+          "privacy": {
+            "gold": 4,
+            "recall": 0,
+            "precision": null
+          }
+        },
+        "severeRecall": 0,
+        "severeMissed": 30,
+        "severeGold": 30,
+        "anyAlertCoverage": 0,
+        "trueRiskHit": 0,
+        "riskyN": 43,
+        "falseAlarm": 0,
+        "cleanN": 77,
+        "intentLabel": "complaint",
+        "emotionLabel": "anger"
+      },
+      "all": {
+        "n": 120,
+        "intentAcc": 60,
+        "intentCI": [
+          51.1,
+          68.3
+        ],
+        "emotionAcc": 50,
+        "emotionCI": [
+          41.2,
+          58.8
+        ],
+        "polarityAcc": 60,
+        "riskPrecision": 87.2,
+        "riskRecall": 72.3,
+        "riskRecallCI": [
+          58.2,
+          83.1
+        ],
+        "riskF1": 79.1,
+        "byCategory": {
+          "safety": {
+            "gold": 10,
+            "recall": 70,
+            "precision": 100
+          },
+          "pr": {
+            "gold": 7,
+            "recall": 71.4,
+            "precision": 83.3
+          },
+          "legal": {
+            "gold": 6,
+            "recall": 83.3,
+            "precision": 62.5
+          },
+          "churn": {
+            "gold": 7,
+            "recall": 57.1,
+            "precision": 80
+          },
+          "minor": {
+            "gold": 7,
+            "recall": 71.4,
+            "precision": 100
+          },
+          "fraud": {
+            "gold": 6,
+            "recall": 83.3,
+            "precision": 100
+          },
+          "privacy": {
+            "gold": 4,
+            "recall": 75,
+            "precision": 100
+          }
+        },
+        "severeRecall": 73.3,
+        "severeMissed": 8,
+        "severeGold": 30,
+        "anyAlertCoverage": 74.4,
+        "trueRiskHit": 74.4,
+        "riskyN": 43,
+        "falseAlarm": 3.9,
+        "cleanN": 77
+      },
+      "consensus": {
+        "baseline": {
+          "n": 102,
+          "intentAcc": 18.6,
+          "intentCI": [
+            12.3,
+            27.3
+          ],
+          "emotionAcc": 27.5,
+          "emotionCI": [
+            19.7,
+            36.8
+          ],
+          "polarityAcc": 53.9,
+          "riskPrecision": 0,
+          "riskRecall": 0,
+          "riskRecallCI": [
+            0,
+            8.6
+          ],
+          "riskF1": 0,
+          "byCategory": {
+            "safety": {
+              "gold": 10,
+              "recall": 0,
+              "precision": null
+            },
+            "pr": {
+              "gold": 7,
+              "recall": 0,
+              "precision": null
+            },
+            "legal": {
+              "gold": 5,
+              "recall": 0,
+              "precision": null
+            },
+            "churn": {
+              "gold": 5,
+              "recall": 0,
+              "precision": null
+            },
+            "minor": {
+              "gold": 5,
+              "recall": 0,
+              "precision": null
+            },
+            "fraud": {
+              "gold": 6,
+              "recall": 0,
+              "precision": null
+            },
+            "privacy": {
+              "gold": 3,
+              "recall": 0,
+              "precision": null
+            }
+          },
+          "severeRecall": 0,
+          "severeMissed": 27,
+          "severeGold": 27,
+          "anyAlertCoverage": 0,
+          "trueRiskHit": 0,
+          "riskyN": 37,
+          "falseAlarm": 0,
+          "cleanN": 65,
+          "intentLabel": "complaint",
+          "emotionLabel": "anger"
+        },
+        "rules": {
+          "n": 102,
+          "intentAcc": 59.8,
+          "intentCI": [
+            50.1,
+            68.8
+          ],
+          "emotionAcc": 53.9,
+          "emotionCI": [
+            44.3,
+            63.3
+          ],
+          "polarityAcc": 62.7,
+          "riskPrecision": 85.7,
+          "riskRecall": 73.2,
+          "riskRecallCI": [
+            58.1,
+            84.3
+          ],
+          "riskF1": 79,
+          "byCategory": {
+            "safety": {
+              "gold": 10,
+              "recall": 70,
+              "precision": 100
+            },
+            "pr": {
+              "gold": 7,
+              "recall": 71.4,
+              "precision": 83.3
+            },
+            "legal": {
+              "gold": 5,
+              "recall": 80,
+              "precision": 57.1
+            },
+            "churn": {
+              "gold": 5,
+              "recall": 60,
+              "precision": 75
+            },
+            "minor": {
+              "gold": 5,
+              "recall": 80,
+              "precision": 100
+            },
+            "fraud": {
+              "gold": 6,
+              "recall": 83.3,
+              "precision": 100
+            },
+            "privacy": {
+              "gold": 3,
+              "recall": 66.7,
+              "precision": 100
+            }
+          },
+          "severeRecall": 74.1,
+          "severeMissed": 7,
+          "severeGold": 27,
+          "anyAlertCoverage": 75.7,
+          "trueRiskHit": 75.7,
+          "riskyN": 37,
+          "falseAlarm": 4.6,
+          "cleanN": 65
+        }
+      },
+      "byKind": [
+        {
+          "kind": "colloquial",
+          "cn": "口语与网络用语",
+          "n": 18,
+          "intentAcc": 55.6,
+          "emotionAcc": 55.6,
+          "riskRecall": 33.3
+        },
+        {
+          "kind": "plain",
+          "cn": "直白",
+          "n": 40,
+          "intentAcc": 75,
+          "emotionAcc": 57.5,
+          "riskRecall": 78.1
+        },
+        {
+          "kind": "implicit",
+          "cn": "含蓄表达",
+          "n": 18,
+          "intentAcc": 44.4,
+          "emotionAcc": 66.7,
+          "riskRecall": 100
+        },
+        {
+          "kind": "negation",
+          "cn": "否定与转述",
+          "n": 10,
+          "intentAcc": 50,
+          "emotionAcc": 30,
+          "riskRecall": 33.3
+        },
+        {
+          "kind": "sarcasm",
+          "cn": "反讽",
+          "n": 10,
+          "intentAcc": 40,
+          "emotionAcc": 20,
+          "riskRecall": 50
+        },
+        {
+          "kind": "decoy",
+          "cn": "有风险词但无风险",
+          "n": 10,
+          "intentAcc": 50,
+          "emotionAcc": 40,
+          "riskRecall": 0
+        },
+        {
+          "kind": "late_cue",
+          "cn": "关键线索在长句末尾",
+          "n": 8,
+          "intentAcc": 62.5,
+          "emotionAcc": 25,
+          "riskRecall": 100
+        },
+        {
+          "kind": "multi",
+          "cn": "双意图",
+          "n": 6,
+          "intentAcc": 83.3,
+          "emotionAcc": 66.7,
+          "riskRecall": 100
+        }
+      ],
+      "compliance": {
+        "all": {
+          "n": 40,
+          "violating": 20,
+          "accuracy": 75,
+          "precision": 91.7,
+          "recall": 55,
+          "recallCI": [
+            34.2,
+            74.2
+          ],
+          "falseBlock": 5,
+          "falseBlockCI": [
+            0.9,
+            23.6
+          ]
+        },
+        "consensus": {
+          "n": 40,
+          "violating": 20,
+          "accuracy": 75,
+          "precision": 91.7,
+          "recall": 55,
+          "recallCI": [
+            34.2,
+            74.2
+          ],
+          "falseBlock": 5,
+          "falseBlockCI": [
+            0.9,
+            23.6
+          ]
+        }
+      },
+      "router": {
+        "share": {
+          "fast": 0.8,
+          "lite": 10.8,
+          "full": 88.3
+        },
+        "counts": {
+          "fast": 1,
+          "lite": 13,
+          "full": 106
+        },
+        "liteN": 13,
+        "liteIntentAcc": 92.3,
+        "riskyN": 43,
+        "riskyFull": 42,
+        "riskyLite": 1,
+        "riskyFast": 0,
+        "first": {
+          "at": "2026-10-12T08:05:01.183Z",
+          "note": "First measurement of the router on the blind set, before the sensitive-cue screen was added. Frozen.",
+          "share": {
+            "fast": 0.7,
+            "lite": 20,
+            "full": 79.3
+          },
+          "counts": {
+            "fast": 1,
+            "lite": 30,
+            "full": 119
+          },
+          "liteN": 30,
+          "liteIntentAcc": 80,
+          "riskyN": 49,
+          "riskyKeptFromModel": 3
+        }
+      }
+    }
+  },
+  "tokens": {
+    "basis": "6 段演示会话的 16 个消费者轮次；路由比例取自迭代验证集",
+    "method": "输入按产品真实发送的提示词字符串估算，输出按演示脚本里同一轮的结果长度估算；1 个汉字计 1 token，其余 4 个字符计 1 token。没有经过真实调用验证。",
+    "prices": {
+      "main": {
+        "model": "qwen3.8-27b",
+        "input": 3,
+        "output": 12,
+        "cached": 0.6
+      },
+      "fast": {
+        "model": "qwen3.5-35b-a3b",
+        "input": 0.4,
+        "output": 3.2
+      }
+    },
+    "perCall": {
+      "naiveIn": 5032,
+      "singleIn": 1704,
+      "lingxiIn": 1780,
+      "liteIn": 1361,
+      "out": 452,
+      "auditOut": 269
+    },
+    "steps": [
+      {
+        "key": "naive",
+        "cn": "每个智能体各调用一次",
+        "note": "闻、问、切、笔、策、检各一次，各带完整对话与知识库全文",
+        "calls": 6,
+        "input": 5032,
+        "output": 721,
+        "cost": 0.02375,
+        "total": 5753
+      },
+      {
+        "key": "single",
+        "cn": "单次调用 + 基础检索（合理基线）",
+        "note": "主模型一次完成研判与起草；整段对话、检索命中的全文；没有服务事实",
+        "calls": 1,
+        "input": 1704,
+        "output": 452,
+        "cost": 0.01054,
+        "total": 2156
+      },
+      {
+        "key": "lingxi",
+        "cn": "灵犀完整路由",
+        "note": "主模型一次调用；加入服务事实、裁剪上下文；核验失败时另加一次修正（未计入）",
+        "calls": 1,
+        "input": 1780,
+        "output": 452,
+        "cost": 0.01076,
+        "total": 2232
+      },
+      {
+        "key": "route",
+        "cn": "灵犀 + 规则路由",
+        "note": "寒暄不调用模型；有把握的低风险咨询由快速模型完成（未计升级与修正）",
+        "calls": 0.99,
+        "input": 1712,
+        "output": 449,
+        "cost": 0.00952,
+        "total": 2161
+      }
+    ],
+    "vsSingle": {
+      "tokensPct": 0.2,
+      "costPct": -9.7
+    },
+    "vsNaive": {
+      "tokensPct": -62.4,
+      "costPct": -59.9
+    },
+    "cacheablePrefix": {
+      "full": 1231,
+      "threshold": 1024
+    },
+    "notCounted": [
+      "核验失败时的修正调用",
+      "快速模型发现风险后的升级",
+      "图片识别",
+      "会诊",
+      "JSON 模式失败后的重试"
+    ]
+  },
+  "trajectory": {
+    "data": {
+      "customers": 42,
+      "orders": 56,
+      "tickets": 34,
+      "contacts": 68
+    },
+    "planted": [
+      {
+        "type": "repeat_contact",
+        "cn": "重复进线",
+        "planted": 6,
+        "found": 6
+      },
+      {
+        "type": "repeat_refund",
+        "cn": "重复退款",
+        "planted": 4,
+        "found": 4
+      },
+      {
+        "type": "pr",
+        "cn": "舆情投诉",
+        "planted": 3,
+        "found": 3
+      },
+      {
+        "type": "adverse",
+        "cn": "不良反应",
+        "planted": 3,
+        "found": 3
+      }
+    ],
+    "plantedTotal": 16,
+    "foundTotal": 16,
+    "ordinary": 20,
+    "ordinaryFlagged": 0,
+    "alerts": 28
+  },
+  "llm": null
+}

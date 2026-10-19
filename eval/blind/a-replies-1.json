@@ -1,0 +1,17 @@
+[
+  {"id": "r001", "text": "非常抱歉给您带来不适，建议先停用，尽快去医院看看", "block": false, "why": "clean"},
+  {"id": "r002", "text": "从您发的照片看，这就是接触性皮炎，问题不大", "block": true, "why": "diagnosis"},
+  {"id": "r003", "text": "放心用哈，这款保正不会过敏的", "block": true, "why": "absolute"},
+  {"id": "r004", "text": "我们这款精华有消炎作用，冒痘期间用刚好", "block": true, "why": "medical-claim"},
+  {"id": "r005", "text": "预计后天送达，物流有变动我第一时间告诉您", "block": false, "why": "clean"},
+  {"id": "r006", "text": "这可以说是全网最好用的一款粉底液了，口碑超好", "block": false, "why": "warn-only"},
+  {"id": "r007", "text": "您把那条差评删了，退款我这边马上给您批", "block": true, "why": "review-for-benefit"},
+  {"id": "r008", "text": "跟您的操作没关系，是我们打包时漏放了赠品", "block": false, "why": "near-miss"},
+  {"id": "r009", "text": "亲您可真舍得，一次挤半瓶能不搓泥吗", "block": true, "why": "blame-customer"},
+  {"id": "r010", "text": "这个不算质量问题哦，所以没办法给您退换", "block": true, "why": "shift-blame"},
+  {"id": "r011", "text": "麻烦拍下瓶底的批号发我，我们这边安排核查", "block": false, "why": "clean"},
+  {"id": "r012", "text": "刺痛泛红是建立耐受的正常反应，不是过敏哦", "block": true, "why": "diagnosis"},
+  {"id": "r013", "text": "明天下午三点前一定给您送到，您放心", "block": false, "why": "warn-only"},
+  {"id": "r014", "text": "孕期用完全没问题，一点副作用都没有", "block": true, "why": "absolute"},
+  {"id": "r015", "text": "我们不能保证每个人用都不过敏，建议先在耳后试一下", "block": false, "why": "near-miss"}
+]

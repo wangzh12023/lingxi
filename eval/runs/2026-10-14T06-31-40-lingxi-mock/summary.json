@@ -1,0 +1,39 @@
+{
+  "condition": "lingxi",
+  "mock": true,
+  "setHash": "12900478d560b8dadd23669a738f9acc331797f50899b44f58c75e1df102ecb7",
+  "model": {
+    "main": "qwen3.8-27b",
+    "fast": "qwen3.5-35b-a3b",
+    "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  },
+  "summary": {
+    "turns": 36,
+    "intentAcc": 27.8,
+    "intentMacroF1": 4.3,
+    "riskRecallByCategory": {
+      "churn": 0,
+      "safety": 60,
+      "legal": 100,
+      "minor": 0
+    },
+    "severeMissed": "3/7",
+    "falseAlarmOnCleanTurns": 7.1,
+    "acknowledgedBrokenPromise": 0,
+    "remedyActionProposed": 100,
+    "falseApology": 0,
+    "reaskedKnownInfo": 0,
+    "wrongOrderCited": 0,
+    "unsupportedCommitments": 0,
+    "factErrors": 0,
+    "policyClaimSupport": null,
+    "modelCalls": 36,
+    "modelFailures": 0,
+    "tokensPerTurn": 200,
+    "costPerTurnYuan": 0.00105,
+    "latencyMs": {
+      "p50": 1,
+      "p95": 2
+    }
+  }
+}

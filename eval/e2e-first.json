@@ -1,0 +1,40 @@
+{
+  "note": "最终测试集上第一次运行（规则条件）的结果，冻结保存。之后针对“重复询问已知信息”和“订单混淆”两类设计缺陷做了通用修改（依据评审要求，没有查看测试条目），修改后的规则成绩已不再是盲测成绩。",
+  "conditions": {
+    "rules": {
+      "turns": 36,
+      "intentAcc": 36.1,
+      "intentMacroF1": 32.3,
+      "riskRecallByCategory": {
+        "churn": 0,
+        "safety": 60,
+        "legal": 100,
+        "minor": 0
+      },
+      "severeMissed": "3/7",
+      "falseAlarmOnCleanTurns": 7.1,
+      "acknowledgedBrokenPromise": 100,
+      "remedyActionProposed": 100,
+      "falseApology": 0,
+      "reaskedKnownInfo": 9,
+      "wrongOrderCited": 4,
+      "unsupportedCommitments": 0,
+      "factErrors": 0,
+      "policyClaimSupport": 80,
+      "modelCalls": 0,
+      "modelFailures": 0,
+      "tokensPerTurn": 0,
+      "costPerTurnYuan": 0,
+      "latencyMs": {
+        "p50": 1,
+        "p95": 2
+      }
+    }
+  },
+  "generatedAt": "2026-10-14T06:31:35.216Z",
+  "setHash": "12900478d560b8dadd23669a738f9acc331797f50899b44f58c75e1df102ecb7",
+  "frozenAt": "2026-10-14T06:29:22.538Z",
+  "sessions": 14,
+  "turns": 36,
+  "model": null
+}
